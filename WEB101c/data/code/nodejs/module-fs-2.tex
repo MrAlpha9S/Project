@@ -1,0 +1,7 @@
+const { promises : fs } = require("fs");
+
+const funcStart = async () => {
+    await fs.writeFile("file.txt", "Hello fs");
+}
+
+funcStart();
