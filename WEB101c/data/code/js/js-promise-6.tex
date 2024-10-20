@@ -1,9 +1,0 @@
-let url="https://api.npmjs.org/downloads/point/last-week/svelte";
-
-const runFunction = async () => {
-    const result = await fetch(url);
-    const json = await result.json();
-    console.log(json.downloads); // display the download number
-}
-
-runFunction()
